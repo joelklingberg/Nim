@@ -15,7 +15,7 @@ public class Nim {
 		if(amount > (getSticks() / 2)) {
 			System.out.println("You may not pick more than half of the pile. Try again.");
 			player.play(this);
-		} else if(amount == 0) {
+		} else if(amount < 1) {
 			System.out.println("You have to pick at least one stick. Try again.");
 			player.play(this);
 		} else {
